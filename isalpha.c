@@ -6,16 +6,15 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:02:12 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/03 20:11:11 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/04 18:10:12 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (1);
-    return (0);
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (1);
+	return (0);
 }
