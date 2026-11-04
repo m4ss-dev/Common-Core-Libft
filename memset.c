@@ -6,9 +6,13 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:42:43 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/04 18:16:09 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/05 00:25:52 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 
-void *memset(void s[.n], int c, size_t n);
+void *memset(void *ptr, int c, size_t n)
+{
+    
+}
