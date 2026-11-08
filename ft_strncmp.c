@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tolower.c                                          :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/05 00:18:45 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/05 02:28:24 by ydames           ###   ########.fr       */
+/*   Created: 2026/11/08 01:57:09 by ydames            #+#    #+#             */
+/*   Updated: 2026/11/08 02:57:23 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c)
+#include <string.h>
+
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	if (c >= 65 || c <= 90)
-		return (c += 32);
-    return (c);
+    int i;
+
+    i = 0;
+    while (s1[i] || s2[i])
+    {
+        if (s1[i] != s2[i])
+        {
+            return(s1[i] - s2[i]);
+        }
+    }
+    
 }
