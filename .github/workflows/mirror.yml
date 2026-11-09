@@ -1,0 +1,45 @@
+name: Sync public mirror
+
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync branches and tags to the public repository
+        env:
+          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "$MIRROR_TOKEN" ]; then
+            echo "::error::Add the MIRROR_TOKEN secret to the source repository."
+            exit 1
+          fi
+
+          git fetch --no-tags --prune origin \
+            '+refs/heads/*:refs/mirror-src/heads/*'
+          git fetch --no-tags --prune origin \
+            '+refs/tags/*:refs/tags/*'
+          git remote add mirror \
+            "https://x-access-token:${MIRROR_TOKEN}@github.com/m4ss-dev/Common-Core-Libft.git"
+          git push --force --prune mirror \
+            '+refs/mirror-src/heads/*:refs/heads/*' \
+            '+refs/tags/*:refs/tags/*'
