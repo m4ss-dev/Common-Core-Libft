@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   mirror:
+    if: github.repository == '42learners/Common-Core---Libft-dd69b518-c470-4dda-8722-53db7e041016'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
