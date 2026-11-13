@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bzero.c                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
+/*   By: m4ss <m4ss@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 01:59:11 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/05 02:18:05 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/11 18:14:52 by m4ss             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
 
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char *tmp;
-	int i;
+	size_t i;
 
 	i = 0;
 	tmp = s;
-	while(i != n)
+	while (i != n)
 	{
 		tmp[i] = '\0';
 		i++;

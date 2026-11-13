@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memset.c                                           :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
+/*   By: m4ss <m4ss@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:42:43 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/05 02:21:26 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/11 17:31:56 by m4ss             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 // ptr = pointeur generique / int c =  valeur de la zone memoire / n =  taille
 
-void	*memset(void *ptr, int c, size_t n)
+void	*ft_memset(void *ptr, int c, size_t n)
 {
-	unsigned char tmp;
+	size_t i;
 
-	while (n > 0)
+	i = 0;
+	while (i < n)
 	{
-
-        *ptr = (unsigned char)c;
+        ((unsigned char *)ptr)[i] = (unsigned char)c;
+		i++;
 	}
+
 	return (ptr);
 }
