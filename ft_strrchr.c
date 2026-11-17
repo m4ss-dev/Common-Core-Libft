@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 01:19:56 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/08 02:42:11 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/16 17:30:36 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,8 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	if ((char)c == '\0')
 	{
-		return((char *)&str[i]);
+		return ((char *)&str[i]);
 	}
-	
 	return (occ);
 }
 
