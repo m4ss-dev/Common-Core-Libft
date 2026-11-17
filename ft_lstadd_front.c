@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:24:33 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/17 07:02:46 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/17 08:10:10 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
