@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 18:01:01 by m4ss              #+#    #+#             */
-/*   Updated: 2026/11/17 01:52:54 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/17 08:12:03 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 void	ft_putnbr_fd(int nb, int fd)
 {
-	if (nb == INT_MAX)
+	if (nb == INT_MIN)
 	{
-		ft_putchar_fd(INT_MAX, 1);
+		ft_putstr_fd("-2147483647", 1);
 	}
 	else if (nb < 0)
 	{

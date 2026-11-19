@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 16:49:19 by m4ss              #+#    #+#             */
-/*   Updated: 2026/11/16 17:29:32 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/19 07:33:40 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,11 @@
 
 void	*ft_memcpy(void *destination, const void *source, size_t size)
 {
-	const unsigned char *tmp = source;
-	unsigned char *tmp2 = destination;
+	const unsigned char	*tmp;
+	unsigned char		*tmp2;
 
+	tmp = source;
+	tmp2 = destination;
 	while (size > 0)
 	{
 		*tmp2 = *tmp;

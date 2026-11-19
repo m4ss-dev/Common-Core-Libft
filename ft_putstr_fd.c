@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 18:01:01 by m4ss              #+#    #+#             */
-/*   Updated: 2026/11/16 17:29:52 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/17 08:11:58 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	while (s[i])
 	{
-		ft_putchar_fd(&s[i], fd);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }

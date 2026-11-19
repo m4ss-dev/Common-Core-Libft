@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:29:08 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/16 17:30:04 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/19 07:30:17 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,10 @@
 
 size_t	ft_strlen(const char *c)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (c[i])
-	{
 		i++;
-	}
 	return (i);
 }

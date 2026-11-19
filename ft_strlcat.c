@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 03:42:11 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/16 17:29:58 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/19 07:42:12 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int	i;
-	int	f;
+	size_t	i;
+	size_t	f;
 
 	i = 0;
 	f = 0;
@@ -35,13 +35,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (ft_strlen(dst));
 }
 
-int	main(void)
-{
-	char	buffer[10] = "KooR";
-	size_t	needed;
+// int	main(void)
+// {
+// 	char	buffer[10] = "KooR";
+// 	size_t	needed;
 
-	needed = strlcat(buffer, ".fr-demo", sizeof buffer);
-	printf("%s\n", buffer);
-	printf("taille necessaire : %zu\n", needed);
-	return (0);
-}
+// 	needed = strlcat(buffer, ".fr-demo", sizeof buffer);
+// 	printf("%s\n", buffer);
+// 	printf("taille necessaire : %zu\n", needed);
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 01:19:56 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/16 17:30:36 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/17 08:12:26 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ char	*ft_strrchr(const char *str, int c)
 	return (occ);
 }
 
-int	main(void)
-{
-	char s[] = "erreur pas reussi";
-	printf("%s", ft_strrchr(s, 'r'));
-}
+// int	main(void)
+// {
+// 	char s[] = "erreur pas reussi";
+// 	printf("%s", ft_strrchr(s, 'r'));
+// }
