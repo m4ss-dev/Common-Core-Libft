@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 21:40:20 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/17 01:45:12 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/20 06:23:33 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*ft_strdup(const char *s)
 {
 	char	*ptr;
-	size_t		i;
+	size_t	i;
 
 	i = 0;
 	ptr = malloc(ft_strlen(s) + 1);

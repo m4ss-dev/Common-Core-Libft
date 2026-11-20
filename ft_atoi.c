@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 01:59:11 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/17 02:11:17 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/20 06:26:16 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	sign;
+	int		i;
+	int		sign;
 	long	resultat;
 
 	i = 0;

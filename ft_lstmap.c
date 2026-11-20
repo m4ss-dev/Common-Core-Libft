@@ -6,7 +6,7 @@
 /*   By: ydames <ydames@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 21:32:45 by ydames            #+#    #+#             */
-/*   Updated: 2026/11/19 10:39:57 by ydames           ###   ########.fr       */
+/*   Updated: 2026/11/20 04:33:12 by ydames           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	{
 		new_content = f(lst->content);
 		new_node = ft_lstnew(new_content);
-		if (new_node != NULL)
+		if (!new_node)
 		{
 			del(new_content);
 			ft_lstclear(&new_list, del);
